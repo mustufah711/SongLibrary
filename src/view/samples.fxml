@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.listController">
+   <children>
+      <ListView fx:id="listView" layoutX="-1.0" onMouseClicked="#view" prefHeight="549.0" prefWidth="261.0" />
+      <Button layoutX="482.0" layoutY="546.0" mnemonicParsing="false" onAction="#addSong" text="Add Song +" />
+      <Label layoutX="14.0" layoutY="567.0" prefHeight="21.0" prefWidth="106.0" text="©MHP Studios" />
+      <Text layoutX="286.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Song Title:" />
+      <Text layoutX="311.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Artist:" />
+      <Text layoutX="324.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year:" />
+      <Text layoutX="266.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album Name:" />
+      <ImageView fitHeight="152.0" fitWidth="340.0" layoutX="260.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Desktop/477f069a2a626fe47cb476c72e409a22.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="songName" layoutX="365.0" layoutY="361.0" prefHeight="31.0" prefWidth="205.0" />
+      <TextField fx:id="artist" layoutX="365.0" layoutY="402.0" prefHeight="31.0" prefWidth="205.0" />
+      <TextField fx:id="year" layoutX="365.0" layoutY="446.0" prefHeight="31.0" prefWidth="205.0" />
+      <TextField fx:id="albumName" layoutX="365.0" layoutY="491.0" prefHeight="31.0" prefWidth="205.0" />
+      <Button fx:id="edit" layoutX="400.0" layoutY="546.0" mnemonicParsing="false" onAction="#editSong" text="Edit" />
+      <Button fx:id="delete" layoutX="301.0" layoutY="546.0" mnemonicParsing="false" onAction="#deleteSong" text="Delete" />
+      <Label layoutX="365.0" layoutY="183.0" />
+      <Text layoutX="283.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Song Title:" />
+      <Text layoutX="308.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Artist:" />
+      <Text layoutX="321.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year:" />
+      <Text layoutX="263.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album Name:" />
+      <Label fx:id="songLabel" layoutX="365.0" layoutY="183.0" text="None" />
+      <Label fx:id="artistLabel" layoutX="365.0" layoutY="224.0" text="None" />
+      <Label fx:id="yearLabel" layoutX="365.0" layoutY="268.0" text="None" />
+      <Label fx:id="albumLabel" layoutX="365.0" layoutY="313.0" text="None" />
+      <Label fx:id="error" layoutX="421.0" layoutY="578.0" prefHeight="21.0" prefWidth="3.0" />
+   </children>
+</Pane>
